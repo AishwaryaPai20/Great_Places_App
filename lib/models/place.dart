@@ -1,5 +1,6 @@
+import 'dart:io';
+
 import 'package:flutter/foundation.dart';
-import 'dart:io'; //to unlock file
 
 class PlaceLocation {
   final double latitude;
@@ -16,7 +17,7 @@ class PlaceLocation {
 class Place {
   final String id;
   final String title;
-  final File location;
+  final PlaceLocation location;
   final File image;
 
   Place({
